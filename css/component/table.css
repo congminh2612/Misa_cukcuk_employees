@@ -1,0 +1,33 @@
+
+.m-table{
+    border:none;
+    border-collapse: collapse;
+    width:100% ;
+    position:relative;
+    
+} 
+.m-table tr{
+    border-bottom: 1px solid #bbb;
+    height:36px;
+    cursor: pointer;
+}
+/* .m-table tr:nth-child(even){
+    background-color:#bbb;
+} */
+.m-table thead th{
+    position:sticky ;
+    top:0px;
+    background-color: #fff;
+}
+
+.m-table tbody tr> :first-child{
+    padding-left:16px;
+    padding-right:10px;
+}
+.m-table tbody tr:hover{
+    background-color:#ebf4ff;
+    cursor:pointer;
+}
+table.m-table tbody tr.m-row-selected{
+    background-color:#e3f3ee;
+}

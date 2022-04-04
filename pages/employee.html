@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/page/employee.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+           <div class="sidebar"></div>
+           <div class="logo"></div>
+        </div>
+
+        <div class="header-right">
+            <div class="header-right-title">
+                <span> Nhà hàng biển đông </span>
+                <i class="title-icon fas fa-angle-down"></i>  
+            </div>
+            <div class="header-right-employee">
+                <div class="employee-avatar"></div>
+                <span class="employee-name">Trần Công Minh</span>
+                <div class="employee-icon"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="navbar">
+        <div class="menu-item active">  
+            <div class="menu-icon" style="background-image: url(/assets/icon/document-online.png);">        
+            </div>
+            <div class="menu-text">Hồ sơ điện tử</div>
+        </div>
+        <div class="menu-item">  
+            <div class="menu-icon" style="background-image: url(/assets/icon/report.png);"></div>
+            <div class="menu-text">Báo cáo</div>
+        </div>
+        <div class="menu-item">  
+            <div class="menu-icon" style="background-image: url(/assets/icon/dashboard.png);"></div>
+            <div class="menu-text">Mua hàng</div>
+        </div>
+        <div class="menu-item">  
+            <div class="menu-icon" style="background-image: url(/assets/icon/dic-employee.png);"></div>
+            <div class="menu-text">Danh mục nhân viên</div>
+        </div>
+        <div class="menu-item">  
+            <div class="menu-icon" style="background-image: url(/assets/icon/setting.png);"></div>
+            <div class="menu-text">Thiết lập hệ thống</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="page-header">
+            <div class="page-title">
+                Danh sách nhân viên
+            </div>
+            <div class="m-btn m-btn-icon" id="btnAdd">Thêm nhân viên</div>
+        </div>
+        <div class="page-toolbar">
+            <input class="toolbar-input m-input" placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại">
+            <div class="toolbar-select">
+                <select name="" id="" value="" class="select-item">        
+                    <option value="1">Lựa chọn 1</option>
+                    <option value="2">Lựa chọn 2</option>
+                    <option value="3">Lựa chọn 3</option>
+                </select>
+
+                <select name="Tất cả vị trí" id="" value="" class="select-item">
+                    <option value="1">Lựa chọn 1</option>
+                    <option value="2">Lựa chọn 2</option>
+                    <option value="3">Lựa chọn 3</option>
+                </select>
+            </div>
+            <div id="btnDelete" class="icon-delete-box">
+                <i class="icon-delete fas fa-trash"></i>
+            </div>
+            <div class="toolbar-icon"></div>
+        </div>
+        <div class="grid grid-scroll">
+            <table id="tblEmployeeList" class="m-table">
+                <thead>
+                    <tr>
+                        <th class="left" style="width:50px" index="index">STT</th>
+                        <th class="left" style="width:100px" propName="EmployeeCode">Mã nhân viên</th>
+                        <th class="left"  propName="EmployeeName">Họ tên</th>
+                        <th class="left" style="width:150px" propName="GenderName" format="Gender">Giới tính</th>
+                        <th class="left"  style="width:150px"  propName="Email"  format="Email">Email</th>
+                        <th class="center" style="width:100px"  propName="DateOfBirth" format="Date">Ngày sinh</th>
+                        <th class="left" style="width:200px"  propName="DepartmentName">Phòng ban</th>
+                        <th class="right" style="width:100px;"  propName="Salary" format="Money">Mức lương</th>
+                    </tr>
+                </thead>
+                <tbody class="body">
+                    
+                </tbody>
+            </table>
+            
+        </div>
+        <div class="m-paging grid-paging">
+            <div class="m-paging-left">
+                Hiển thị <b>01-20/123</b>lao động
+            </div>
+            <div class="m-paging-center">
+                <div class="first-page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-left"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
+                </div>
+
+                <div class="prev-page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg> 
+                </div>
+
+                <div class="number-page">
+                    <ul class="number-item">    
+                        <li class="number-active number">1</li>
+                        <li class="number">2</li>
+                        <li class="number">3</li>
+                        <li class="number">4</li>
+                    </ul>
+                </div>
+                <div class="next-page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+                <div class="last-page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
+                </div>
+
+            </div>
+            <div class="m-paging-right">
+                <b>20</b>lao động/trang
+            </div>
+        </div>
+    </div>
+    <div class="dialog-box">
+        <div class="dialog">
+            <div class="dialog-header">THÔNG TIN CHI TIẾT NHÂN VIÊN</div>
+            <div class="dialog-close">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x dialog-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </div>
+            <div class="dialog-body">
+                <div class="flex">
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Mã nhân viên</label>
+                            <div class="row ">
+                                <input property="EmployeeCode" required="" id="txtEmployeeCode" class="input-size" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Họ và tên</label>
+                            <div class="row ">
+                                <input property="EmployeeName" required="" id="txtEmployeeName" class="input-size" type="text">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col ">
+                            <label for="">Giới tính</label>
+                            <div class="row ">
+                                <select property="Gender"name="" id="" class="input-size">
+                                    <option value="0">Nữ</option>
+                                    <option value="1">Nam</option>
+                                    <option value="2">Không xác định</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Ngày sinh</label>
+                            <div class="row">
+                                <input property="DateOfBirth"class="input-size" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Email</label>
+                            <div class="row">
+                                <input property="Email" class="input-size" type="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Số điện thoại</label>
+                            <div class="row">
+                                <input property="Mobile" class="input-size" type="phone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Vị trí</label>
+                            <div class="row">
+                                <select  name="" id="" class="input-size">
+                                    <option value="">Giám đốc</option>
+                                    <option value="">Nhân viên</option>
+                                    <option value="">Trưởng phòng</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Phòng ban</label>
+                            <div class="row">
+                                <select property="DepartmentId" name="" id="" class="input-size">
+                                    <option value="11452b0c-768e-5ff7-0d63-eeb1d8ed8cef">Phòng Công nghệ thông tin</option>
+                                    <option value="142cb08f-7c31-21fa-8e90-67245e8b283e">Phòng Sản xuất</option>
+                                    <option value="7120d02-6ab5-3e43-18cb-66948daf6128">Phòng Đào tạo</option>
+                                    <option value="469b3ece-744a-45d5-957d-e8c757976496">Phòng Nhân sự</option>
+                                    <option value="4e272fc4-7875-78d6-7d32-6a1673ffca7c">Phòng Tuyển dụng   </option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Mức lương cơ sở</label>
+                            <div class="row "> 
+                                <input property="Salary" class="input-size" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Địa chỉ</label>
+                            <div class="row ">
+                                <input  class="input-size input-size--special" type="textarea">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog-button">
+                <div class="button-box">
+                    <button class="btn btn-quit">Hủy bỏ</button>
+                    <button id="btnSave"class="btn btn-save">Lưu lại</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/page/employee.js"></script>
+    <script src="/js/layout/navbar.js"></script>
+</body>
+    
+</html>

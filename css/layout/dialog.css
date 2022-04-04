@@ -1,0 +1,114 @@
+.dialog-box{
+    display:none;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.4)
+}
+
+.dialog{
+    position:absolute;
+    width:380px;
+    height:450px;
+    top:50%;
+    left:50%;
+    transform: translate(-35%, -55%);
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius:5px;
+    box-shadow: 1px 2px 0 0 rgba(0,0,0,0.05);
+}
+.dialog-header{
+    margin:20px 0 0 12px;
+}
+.dialog-close{
+    position:absolute;
+    top:0;
+    right:0;
+    
+    
+}
+.dialog-close:hover{
+    background-color: #bbb;
+}
+.dialog-icon{
+    width:15px;
+    height:15px;
+    cursor: pointer;
+}
+.dialog-body{
+    margin-left:12px;
+    margin-right:12px;
+    margin-top:12px
+}
+.flex{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.row{
+  
+   
+}
+.input-size{
+    height:30px;
+    border-radius:4px;
+    outline:none;
+    border:solid 1px #bbbbbb;
+    width:170px;
+}
+.input-size:focus{
+    border-color:#019160;
+}
+.input-size--special{
+    width:300px;
+    height:50px;
+}
+input[type="date"]{
+    font-family:GoogleSans;
+}
+.col{
+   margin-top:6px; 
+}
+
+.dialog-button{
+
+}
+.button-box{
+   
+    height:40px;
+    width:100%;
+    margin-top:24px
+}
+.btn{
+    height:30px;
+    width:80px;
+    cursor:pointer;
+    margin-top:5px;
+    outline:none;
+    border:1px solid #bbb;
+    border-radius:4px;
+}
+.btn:hover{
+    opacity: 0.7;
+    
+}
+.btn-quit{
+    margin-left:190px;
+    /* border:1px solid #bbb;
+    border-radius:2px */
+}
+.btn-save{
+    margin-left:12px;
+    background-color:#019160;
+    color:#000;
+}
+.btn-save:hover{
+    color:#fff;
+}
+.border-red{
+    border-color:#FF4747;
+}
+

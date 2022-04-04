@@ -1,0 +1,28 @@
+.navbar{
+    width:224px;
+    height:calc(100vh - 48px);
+    border-right: 1px solid #bbb;
+}
+.menu-item{
+    display:flex;
+    align-items:center;
+    height:44px;
+    padding-left:16px;
+    cursor: pointer;
+}
+.menu-item:hover{
+    background-color: #b5b5b5;
+}
+.active{
+    background-color: #019160;
+}
+.menu-icon{
+    width:20px;
+    height:20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.menu-text{
+    font-family:GoogleSans;
+    margin-left: 8px;
+}

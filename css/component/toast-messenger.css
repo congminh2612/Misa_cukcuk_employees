@@ -1,0 +1,16 @@
+.m-toast{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:48px;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 250px;
+    box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.16) ;
+}
+.toast-close{
+    margin-top: 7px;
+    margin-left:10px;
+    width: 24px;
+    color:#FFCECE
+}

@@ -1,0 +1,73 @@
+.header{
+    display:flex;
+    height:48px;
+    width:100%;
+    
+}
+.header .header-left{
+    display:flex;
+    width:224px;
+    height:100%;
+    padding-left:16px;
+    box-sizing: border-box;
+    align-items: center;
+    border-right:1px solid #bebebe;
+    
+}
+.header .header-right{
+    width: calc(100% - 225px);
+    border-bottom: 1px solid #bebebe;
+}
+.sidebar{
+    width:24px;
+    height:24px;
+    margin-right:10px;
+    background-image:url(/assets/img/toggle.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.logo{
+    height:24px;
+    width:100%;
+    background-image: url(/assets/img/cukcuk-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header-right{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.header-right-title{
+    margin-left:36px;
+    font-size: 16px;
+}
+.title-icon{
+    width:20px;
+    height:20px;
+}
+.header-right-employee{
+    width:160px;
+    display:flex;
+    margin-right:24px;
+    justify-content: space-between;
+    align-items:center;
+}
+.employee-avatar{
+    background-image:url(/assets/icon/avatar-default.png);
+    width:20px;
+    height:20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.employee-name{
+
+}
+.employee-icon{
+    background-image: url(/assets/icon/option.png);
+    width:20px;
+    height:20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

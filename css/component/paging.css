@@ -1,0 +1,70 @@
+.m-paging{
+    position: sticky;
+    bottom: 0px;
+    margin: 0;
+    height:100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+}
+.m-paging-Left{
+  
+}
+.m-paging-center{
+    display:flex;
+    justify-content: space-between;
+    width:500px;
+    align-items: center;
+    height:56px;
+    line-height:56px;
+    
+} 
+    .first-page{
+        margin-top:10px;
+        margin-right:-70px;
+    }
+    .first-page:hover{
+        color:#fff;
+    }
+    .prev-page{
+        margin-right:-50px;
+        margin-top:10px;
+    }   
+    .number-page{
+    }
+        .number-item{
+            display:flex;
+            list-style: none;
+            width:300px;
+            justify-content:space-around;
+            align-items:center;
+        }
+            .number{
+                
+                text-align:center;
+                height:30px;
+                width:30px;
+                border-radius:50%;
+                border:1px solid #000;
+                line-height:30px;
+            }
+            .number:hover{
+                background-color: #fff;
+            }
+            .number-active{
+                background-color: #109160;
+            }
+    .next-page{
+        margin-left:-70px;
+        margin-top:10px;
+    }
+    .last-page{
+        margin-top:10px;
+        margin-left:-50px;
+    }
+.m-paging-right{
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    margin-right: 10px;
+}

@@ -1,0 +1,35 @@
+.m-input{
+    border-width:1px;
+    border-color:#bbb;
+    border-radius:4px;
+    height:40px;
+    outline:none;
+    padding:0 10px;
+    border-style: solid;
+    box-sizing: border-box;
+    width: 200px;
+}
+.m-input:focus{
+    border-color:#019160;
+}
+.m-input-error{
+    border-color:#FF4747;
+}
+.m-error-box{
+    position: relative;
+    background-color:#FF4747;
+    color:#fff;
+    padding:8px;
+    text-align:center;
+    border-radius:4px;
+    margin:4px;
+}
+.m-error-box .m-box-arrow{
+    position:absolute;
+    width:16px;
+    height:16px;
+    background-color:#ff4747;
+    transform:rotate(45deg);
+    left:47%;
+    z-index:0;
+}

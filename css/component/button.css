@@ -1,0 +1,30 @@
+.m-btn{
+    background-color:#109160;
+    border-radius:4px;
+    height:40px;
+    font-size:13px;
+    color:#fff;
+    padding-left:24px;
+    padding-right:24px;
+    text-align:center;
+    border:none;
+    line-height:40px;
+    min-width: 100px;
+    cursor: pointer;
+}
+.m-btn:hover{
+    background-color: #2FBE8E;
+}
+.m-btn:active{
+    background-color: #01B075;
+}
+.m-btn-icon{
+    padding-left:16px;
+    padding-right:16px;
+    background-image: url(../../assets/icon/add.png);
+    background-repeat:no-repeat;
+    background-position:16px center;
+    background-size:16px 16px;
+    padding-left:40px;
+}
+
